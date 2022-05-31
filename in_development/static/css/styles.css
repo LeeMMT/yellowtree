@@ -1,0 +1,65 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*Hero Banner*/
+
+.hero-banner {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/index/hero.webp);
+}
+
+.hero-banner .container {
+  height: 100%;
+}
+
+.hero-inner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-banner .text-wrapper {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-banner h1 {
+  color: var(--white);
+  font-family: 'Open Sans Reg', Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  line-height: 1.3em;
+}
+
+.hero-banner h1 span {
+  color: var(--primary);
+}
+
+/*Media Queries*/
+
+@media screen and (max-width: 950px) {
+  .hero-inner {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero-inner {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-banner .text-wrapper {
+    max-width: 375px;
+  }
+}
